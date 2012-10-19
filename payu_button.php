@@ -3,11 +3,14 @@ define("__MERCHANT__", "идентификатор_мерчанта");
 define("__SECRETKEY__", "Секретный ключ"); 
 define("__DEBUG__", 1); # Debug mode 0 = off, 1 = on  
 
+
+
 define("__currency__", "UAH"); # Currency of merchant
 define("__language__", "RU"); # Language of payment page
 
 define("__PAYUIMG__", "/payu.jpg"); # link to file payu.jpg
 
+define("__LU__", ""); # for UA live empty
 //---------
 define("__Encode__", "UTF-8"); # windows-1251 or utf-8 
 
@@ -96,6 +99,8 @@ $option  = array( 'merchant' => __MERCHANT__,
 				  'secretkey' => __SECRETKEY__, 
                   'debug' => __DEBUG__, 
                   "button" => $button );
+
+if ( __LU__ != "" ) $option['luUrl'] = __LU__;
 
 
 $forSend = array (
