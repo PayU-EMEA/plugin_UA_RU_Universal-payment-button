@@ -23,12 +23,14 @@ define("__PAYUIMG__", "/payu.jpg");  # Прямая ссылка на карти
 ```
 
 4. Добавить следующий код на страницу:
+
 ```HTML 
 <script src="/payu_button.php?get=all" type="text/javascript"></script>
 ```
 # Обратите внимание, чтобы путь к файлу был правильным
 5. Добавьте к любому элементу сайта идентификатор 
 например :
+
 ```HTML
 <img src='./img/test.jpg' id='PayU_paybutton' >
 ```
